@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js">
-<!--<![endif]-->
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hotel Transavania - Rooms</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- links to stylesheet -->
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/roompage.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/img/logo.svg" />
-    <script src="https://kit.fontawesome.com/dcc95333f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet" />
+    <title>Rooms | Rates</title>
 </head>
 
-
-
-
 <body>
+    <!-- Header section added -->
+    <header class="hero">
+        <div id="overlay"></div>
+        <nav class="navbar">
+            <div style="display: flex;">
+              <img src="images/img/logo.svg" alt="" onclick="location.href='index.html'" />
+              <p>
+                Hotel Transavania
+              </p>
+            </div>
+=======
     <!--[if lt IE 7]>
    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
@@ -152,8 +154,7 @@
             <h1>STANDARD ROOMS</h1>
             <hr class="purple-underline">
 
-            <p class="first-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-            </p>
+            <p class="first-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.            </p>
 
             <br>
             <p class="second-paragraph">magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -182,45 +183,245 @@
 
         </figure>
 
-    </div>
 
-    <br>
+            <i class="fa fa-bars" id="icon"></i>
 
-    <div class="room-card">
-        <article>
-            <h1>MINI SUITES</h1>
-            <hr class="purple-underline">
+            <ul class="nav">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="roompages.html">Rooms</a></li>
+              <li><a href="facilitypage.html">Facilities</a></li>
+              <li><a href="contactpage.html">Contact</a></li>
+            </ul>
+        </nav>
 
-            <p class="first-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+        <div class="hero-content">
+            <h1 class="hero-heading">
+              ROOMS JUST HOW YOU LIKE IT
+            </h1>
+
+            <p style="font-size: 25px;">
+              HOTEL TRANSAVANIA OFFERS YOU THE WORLD CLASS ROOMS
             </p>
+        </div>
+    </header>
+    <!-- End of roompage header -->
 
-            <br>
-            <p class="second-paragraph">magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+    <div id="hotel-rooms">
+        <section class="room-card premium">
+            <div class="column-md">
+                <div>
+                    <h2 class="room-type">PREMIUM ROOMS</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
+                    <p>
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+                    </p>
+                    <!-- div for price tag for roooms -->
+                    <h2 class="price-title">PRICE RANGES</h2>
+                    <div class="price-tag">
+                        <img src="images/rooms/naira.png" />
+                        <span>190,000</span>
+                        <!-- <i class="fa fa-arrow-left"></i> -->
+                        <img src="images/rooms/naira.png" />
+                        <span>150,000</span>
+                    </div>
+                </div>
+                <button class="btn">Make A Reservation</button>
+            </div>
 
-            <h2>PRICE RANGES</h2>
-            <span class="prices">
-                <img src="images/rooms/naira.png">
-                <p>250,000</p> &nbsp;
-                <i class="fas fa-arrows-alt-h"></i> &nbsp;
-                <img src="images/rooms/naira.png">
-                <p>200,000</p>
-            </span>
-            <button class="reservation">Make A Reservation</button>
+            <div class="side-panel">
+                <div class="col-1">
+                    <img src="images/rooms/image1.jpeg" alt="Premium rooms" />
+                </div>
 
+                <div class="col-1">
+                    <div class="row">
+                        <div class="sub-panel">
+                            <img src="images/rooms/image2.jpeg" alt="Premium rooms" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="sub-panel">
+                            <img src="images/rooms/image3.jpeg" alt="Premium rooms" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        </article>
+        <!-- executive room -->
+        <section class="room-card executive">
+            <div class="column-md">
+                <div>
+                    <h2 class="room-type">EXECUTIVE ROOMS</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
+                    <p>
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+                    </p>
+                    <!-- div for price tag for roooms -->
+                    <h2 class="price-title">PRICE RANGES</h2>
+                    <div class="price-tag">
+                        <img src="images/rooms/naira.png" />
+                        <span>190,000</span>
+                        <!-- <i class="fa fa-arrow-left"></i> -->
+                        <img src="images/rooms/naira.png" />
+                        <span>150,000</span>
+                    </div>
+                </div>
+                <button class="btn">Make A Reservation</button>
+            </div>
 
-        <hr class="border">
-        <figure>
-            <img class="image13" src="images/rooms/image13.jpeg">
+            <div class="side-panel">
+                <div class="col-1">
+                    <img src="images/rooms/image4.jpeg" alt="Executive rooms" />
+                </div>
 
-            <img class="image14" src="images/rooms/image14.jpeg">
+                <div class="col-1">
+                    <div class="row">
+                        <div class="sub-panel">
+                            <img src="images/rooms/image5.jpeg" alt="Executive rooms" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="sub-panel">
+                            <img src="images/rooms/image6.jpeg" alt="Executive rooms" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- double rooms -->
+        <section class="room-card double">
+            <div class="column-md">
+                <div>
+                    <h2 class="room-type">DOUBLE ROOMS</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
+                    <p>
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+                    </p>
+                    <!-- div for price tag for roooms -->
+                    <h2 class="price-title">PRICE RANGES</h2>
+                    <div class="price-tag">
+                        <img src="images/rooms/naira.png" />
+                        <span>190,000</span>
+                        <!-- <i class="fa fa-arrow-left"></i> -->
+                        <img src="images/rooms/naira.png" />
+                        <span>150,000</span>
+                    </div>
+                </div>
+                <button class="btn">Make A Reservation</button>
+            </div>
 
+            <div class="side-panel">
+                <div class="col-1">
+                    <img src="images/rooms/image7.jpeg" alt="Double rooms" />
+                </div>
 
-        </figure>
+                <div class="col-1">
+                    <div class="row">
+                        <div class="sub-panel">
+                            <img src="images/rooms/image8.jpeg" alt="Double rooms" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="sub-panel">
+                            <img src="images/rooms/image9.jpeg" alt="Double rooms" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- standard rooms-->
+        <section class="room-card standard">
+            <div class="column-md">
+                <div>
+                    <h2 class="room-type">STANDARD ROOMS</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
+                    <p>
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+                    </p>
+                    <!-- div for price tag for roooms -->
+                    <h2 class="price-title">PRICE RANGES</h2>
+                    <div class="price-tag">
+                        <img src="images/rooms/naira.png" />
+                        <span>190,000</span>
+                        <!-- <i class="fa fa-arrow-left"></i> -->
+                        <img src="images/rooms/naira.png" />
+                        <span>150,000</span>
+                    </div>
+                </div>
+                <button class="btn">Make A Reservation</button>
+            </div>
+
+            <div class="side-panel">
+                <div class="col-1">
+                    <img src="images/rooms/image10.jpeg" alt="Standard rooms" />
+                </div>
+
+                <div class="col-1">
+                    <div class="row">
+                        <div class="sub-panel">
+                            <img src="images/rooms/image11.jpeg" alt="Standard rooms" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="sub-panel">
+                            <img src="images/rooms/image9.jpeg" alt="Standard rooms" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- mini suites -->
+        <section class="room-card mini">
+            <div class="column-md">
+                <div>
+                    <h2 class="room-type">MINI SUITES</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
+                    <p>
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+                    </p>
+                    <!-- div for price tag for roooms -->
+                    <h2 class="price-title">PRICE RANGES</h2>
+                    <div class="price-tag">
+                        <img src="images/rooms/naira.png" />
+                        <span>190,000</span>
+                        <!-- <i class="fa fa-arrow-left"></i> -->
+                        <img src="images/rooms/naira.png" />
+                        <span>150,000</span>
+                    </div>
+                </div>
+                <button class="btn">Make A Reservation</button>
+            </div>
+
+            <div class="side-panel">
+                <div class="col-1">
+                    <img src="images/rooms/image13.jpeg" alt="Mini Suites" />
+                </div>
+
+                <div class="col-1">
+                    <div class="row">
+                        <div class="sub-panel mini-suite">
+                            <img src="images/rooms/image14.jpeg" alt="Mini Suites" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End of rooms page -->
     </div>
 
     <footer class="footer-container">
@@ -230,47 +431,47 @@
                 <a href="https://goo.gl/maps/ct6hbTr46dtLZkLv7">
                     <img src="images/img/icons/location.svg" alt="" />
                 </a>
-                <a href="https://goo.gl/maps/ct6hbTr46dtLZkLv7">7 ZIKS AVENUE, AWKA NIGERIA</a>
+                <a href="https://goo.gl/maps/ct6hbTr46dtLZkLv7">7 ZIKS AVENUE, AWKA NIGERIA</a
+          >
+        </div>
+      </div>
+
+      <div class="column">
+        <p class="title">Menu</p>
+        <hr />
+        <a class="menu text" href="#">Home</a>
+                <a class="menu text" href="#">Rooms &amp; Rates</a>
+                <a class="menu text" href="#">Facilities</a>
             </div>
-        </div>
 
-        <div class="column">
-            <p class="title">Menu</p>
-            <hr />
-            <a class="menu text" href="#">Home</a>
-            <a class="menu text" href="#">Rooms &amp; Rates</a>
-            <a class="menu text" href="#">Facilities</a>
-        </div>
+            <div class="column">
+                <p class="title">Contact</p>
+                <hr />
+                <p class="text phone">+234-810-9819-775</p>
+                <p class="text">
+                    <a href="mailto:help@hoteltransavania.com">help@hoteltransavania.com</a
+          >
+        </p>
+      </div>
 
-        <div class="column">
-            <p class="title">Contact</p>
-            <hr />
-            <p class="text phone">+234-810-9819-775</p>
-            <p class="text">
-                <a href="mailto:help@hoteltransavania.com">help@hoteltransavania.com</a>
-            </p>
-        </div>
-
-        <div class="column">
-            <p class="title">Social Media</p>
-            <hr />
-            <a href="https://facebook.com">
-                <img class="icons" src="images/img/icons/fb.svg" alt="facebook" />
-            </a>
-            <a href="https://twitter.com">
-                <img class="icons" src="images/img/icons/tw.svg" alt="twitter" />
-            </a>
-            <a href="https://linkedin.com">
-                <img class="icons" src="images/img/icons/ln.svg" alt="linkedIn" />
-            </a>
-        </div>
-        <hr class="bottom" />
+      <div class="column">
+        <p class="title">Social Media</p>
+        <hr />
+        <a href="https://facebook.com">
+          <img class="icons" src="images/img/icons/fb.svg" alt="facebook" />
+        </a>
+                    <a href="https://twitter.com">
+                        <img class="icons" src="images/img/icons/tw.svg" alt="twitter" />
+                    </a>
+                    <a href="https://linkedin.com">
+                        <img class="icons" src="images/img/icons/ln.svg" alt="linkedIn" />
+                    </a>
+            </div>
+            <hr class="bottom" />
     </footer>
 
-
-
-
-    <script src="" async defer></script>
+    <!-- javascript library -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

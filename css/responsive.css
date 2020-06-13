@@ -22,6 +22,53 @@
   .room-section hr {
     width: auto;
   }
+
+  #hotel-rooms {
+    margin: 0;
+    padding: 0;
+  }
+
+  .room-card {
+    padding: 35px 50px;
+    margin-bottom: 0;
+  }
+
+  .column-md {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .column-md div:first-child {
+    padding-right: 0;
+    border-right: none;
+    text-align: center;
+  }
+
+  .room-type {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn {
+    width: auto;
+  }
+
+  .side-panel {
+    margin-top: 20px;
+    flex-direction: column;
+    width: auto;
+  }
+
+  .col-1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .sub-panel img, .mini-suite img {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (max-width: 767px) {
