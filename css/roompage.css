@@ -1,0 +1,151 @@
+#hotel-rooms {
+    background-color: #f4f4f4;
+    padding: 5rem 0;
+}
+
+.hero-heading {
+    font-size: 50px;
+}
+
+.room-card {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    padding: 0 50px;
+    background: #faebff;
+    min-height: 50vh;
+    margin-bottom: 7rem;
+}
+
+.column-md {
+    width: 41%;
+    padding: 30px 0 10px;
+}
+
+.column-md div:first-child {
+    padding-right: 35px;
+    border-right: 0.5px solid #444;
+}
+
+.room-type {
+    width: 50%;
+    padding: 7px 0;
+    font-weight: 500;
+    font-size: 2.8rem;
+    border-bottom: 2px solid #8a2d92;
+}
+
+.room-card p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin: 2rem 0;
+    line-height: 1.2;
+}
+
+.price-title {
+    margin-top: 3.5rem;
+    font-weight: 400;
+    font-size: 1.95rem;
+}
+
+.price-tag {
+    display: inline-block;
+    margin-left: -5px;
+}
+
+span {
+    vertical-align: 10px;
+}
+
+.btn {
+    font-family: "Carrois Gothic SC", sans-serif;
+    width: 180px;
+    margin: 20px auto 0;
+    padding: 10px;
+}
+
+.side-panel {
+    display: flex;
+    width: 55%;
+}
+
+.col-1 {
+    flex: 1;
+}
+
+.col-1 img {
+    width: 30vw;
+    height: 55vh;
+}
+
+.sub-panel {
+    margin: 25px 0 0 0;
+}
+
+.sub-panel img {
+    margin-left: -2rem;
+    width: 20vw;
+    height: 22vh;
+}
+.mini-suite img {
+    margin-left: -9rem;
+    margin-top: 1.5rem;
+    width: 25vw;
+    height: 44vh;
+}
+
+@media (max-width: 480px) {
+    #hotel-rooms {
+        margin: 0;
+        padding: 0;
+    }
+
+    .room-card {
+        padding: 35px 50px;
+        margin-bottom: 0;
+    }
+
+    .column-md {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .column-md div:first-child {
+        padding-right: 0;
+        border-right: none;
+        text-align: center;
+    }
+
+    .room-type {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn {
+        width: auto;
+    }
+
+    .side-panel {
+        margin-top: 20px;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .col-1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sub-panel img {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+    }
+    
+    .mini-suite img {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+    }
+}
