@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Carrois Gothic SC", sans-serif;
 }
 
 .hero {
@@ -12,7 +12,7 @@ body {
 }
 
 .banner-background {
-    background-color: rgba(93, 27, 109, 0.35);
+    background-color: rgba(93, 27, 109, 0.65);
     height: 85vh;
 }
 
@@ -22,20 +22,22 @@ body {
   justify-content: center;
   position: relative;
   height: 70%;
-  color: white;
   margin: 0 7rem;
 }
 
 .banner-content .primary-heading {
 	font-size: 40px;
-	font-weight: 900;
+    font-weight: lighter;
+    padding-left: 0;
+    color: white
 }
 
 .banner-content > p {
-    font-weight: 600;
     font-size: 18px;
-    letter-spacing: 0.17em;
+    letter-spacing: 0.05em;
     margin: 0;
+    padding-left: 0;
+    color: white
 }
 
 .banner-image {
@@ -177,6 +179,28 @@ body {
 .container>div:nth-child(2n) .text-content::after {
     left: auto;
     right: 100%;
+}
+
+.footer-container * {
+    color: white;
+}
+
+.footer-container p {
+    padding: 0;
+    margin: 24px auto;
+}
+
+.footer-container p.phone {
+    padding-top: 10px;
+    margin: 16px auto;
+}
+
+.footer-container p.text {
+    margin: 16px auto;
+}
+
+.footer-container hr {
+    margin: 5px auto;
 }
 
 @media (max-width: 1199.98px) {}
